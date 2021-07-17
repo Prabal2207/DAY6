@@ -22,12 +22,14 @@ namespace CouponNumber
              Random random = new Random();
 
              int i = 0;
+            int count = 0;
 
-             while (i != n)
+            while (i != n)
              {
                  int check = random.Next(1,6);
                  Console.WriteLine("c" + check);
                  Console.WriteLine("i " + i);
+                 count++;
 
 
 
@@ -48,6 +50,7 @@ namespace CouponNumber
              {
                  Console.WriteLine("distinct coupon list is:" + coupon[i]);
              }
+            Console.WriteLine("Number of time random is used to get the distinct coupon= " + count);
 
 
         }
